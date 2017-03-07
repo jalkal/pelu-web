@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "http://jalkal.duckdns.org:8081/send",
+				url: "https://email-jalkal.herokuapp.com/send",
                 type: "POST",
                 data: {
                     name: name,
